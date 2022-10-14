@@ -64,9 +64,9 @@ int generavimas(std::vector<int> pazymiai)
 	for (int s = 1; s <= n; s = s + 1)
 	{
 		skaiciai = autoPazymiai(5);
-		isvesk << std::setw(20) << "Vardas" + std::to_string(s) 
-			<< std::setw(20) << "Pavarde" + std::to_string(s) 
-			<< std::setw(18) << skaiciuokRez(skaiciai) 
+		isvesk << std::setw(20) << std::left << "Vardas" + std::to_string(s)
+			<< std::setw(20) << std::left << "Pavarde" + std::to_string(s)
+			<< std::setw(18) << std::left << skaiciuokRez(skaiciai)
 			<< std::endl;;
 		skaiciai.clear();
 
