@@ -123,16 +123,20 @@ int main()  //atspausdina rezultatus
 
 	auto start = std::chrono::high_resolution_clock::now();
 	auto st = start;
-	for (int i = 0; i < n; i++) {
+	for (int i = 0; i < n; i++)
+	{
 		double paz = 5.00;
-		if (studentai.at(i).rez < paz) {
+		if (studentai.at(i).rez < paz)
+		{
 			vargsiukai.push_back(studentai.at(i));
 			vargsai++;
 		}
 	}
-	for (int j = 0; j < n; j++) {
+	for (int j = 0; j < n; j++)
+	{
 		double paz = 5.00;
-		if (studentai.at(j).rez >= paz) {
+		if (studentai.at(j).rez >= paz)
+		{
 			protingi.push_back(studentai.at(j));
 			proting++;
 		}
@@ -148,10 +152,11 @@ int main()  //atspausdina rezultatus
 	std::ofstream vargs_failas(pav);
 	auto start1 = std::chrono::high_resolution_clock::now();
 	auto st1 = start1;
-	for (int i = 0; i < n; i++) {
-
+	for (int i = 0; i < n; i++)
+	{
 		double paz = 5.00;
-		if (studentai.at(i).rez < paz) {
+		if (studentai.at(i).rez < paz)
+		{
 			vargs_failas << studentai.at(i).vardas << std::setw(20) << studentai.at(i).pavarde << std::setw(18) << studentai.at(i).rez << std::endl;
 		}
 
@@ -164,9 +169,11 @@ int main()  //atspausdina rezultatus
 	std::ofstream prot_failas(pav);
 	auto start2 = std::chrono::high_resolution_clock::now();
 	auto st2 = start2;
-	for (int j = 0; j < n; j++) {
+	for (int j = 0; j < n; j++)
+	{
 		double paz = 5.00;
-		if (studentai.at(j).rez >= paz) {
+		if (studentai.at(j).rez >= paz)
+		{
 			prot_failas << studentai.at(j).vardas << std::setw(20) << studentai.at(j).pavarde << std::setw(18) << studentai.at(j).rez << std::endl;
 		}
 	}
