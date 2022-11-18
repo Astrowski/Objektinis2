@@ -9,6 +9,27 @@ Paleidus programą yra prašoma įvesti duomenis:
 
 > Taip pat programa suteikia galimybę sugeneruoti atsitiktinius namų darbų bei egzamino rezultatus.
 
+# Spartos analizė #
+
+Kompiuterio specifikacijos:
+* Procesorius:	Intel Core i7-7700HQ CPU @ 2.80GHz
+* Fizinė atmintis: 16 GB RAM
+* 560 GB SSD
+
+### Duomenų nuskaitymas ###
+
+Container |   1000  |  10000  |  100000 | 1000000 | 10000000 |
+----------|---------|---------|---------|---------|----------|
+Vector    | 0.016s. | 0.152s. | 1.345s. | 13.513s.| 130.762s.|
+List      | 0.018s. | 0.153s. | 1.449s. | 15.304s.| 150.835s.|
+
+### Duomenų grupavimas ###
+
+Container |   1000  |  10000  |  100000 | 1000000 | 10000000 |
+----------|---------|---------|---------|---------|----------|
+Vector    | 0.010s. | 0.050s. | 0.372s. | 1.507s. | 14.449s. |
+List      | 0.002s. | 0.007s. | 0.085s. | 0.989s. |  9.823s. |
+
 # Releases #
 [v0.1](https://github.com/Astrowski/My-first-project/tree/v.01) - pirminė versija
 
