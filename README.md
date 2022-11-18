@@ -1,1 +1,2 @@
-# My-first-project
+# Skaičiuoklė
+Programa leidžainti apskaičiuoti studentų vidurkį ir medianą
