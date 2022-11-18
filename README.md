@@ -10,4 +10,4 @@ Paleidus programą yra prašoma įvesti duomenis:
 > Taip pat programa suteikia galimybę sugeneruoti atsitiktinius namų darbų bei egzamino rezultatus.
 
 # Releases #
-[v0.1]https://github.com/Astrowski/My-first-project/tree/v.01
+[v0.1](https://github.com/Astrowski/My-first-project/tree/v.01) - pirminė versija
