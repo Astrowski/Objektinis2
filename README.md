@@ -11,7 +11,10 @@ Paleidus programą yra prašoma įvesti duomenis:
 
 # Releases #
 [v0.1](https://github.com/Astrowski/My-first-project/tree/v.01) - pirminė versija
+
 [v0.2](https://github.com/Astrowski/My-first-project/tree/v.02) - antra versija
 * Pridėtas duomenų skaitymas iš failo
 * Pridėta galimybė spausdinti vidurkį ir medianą kartu.
 * Studentai yra automatiškai išrūšiuojami pagal jų vardus.
+
+
