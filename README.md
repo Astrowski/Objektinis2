@@ -18,4 +18,5 @@ Paleidus programą yra prašoma įvesti duomenis:
 * Studentai yra automatiškai išrūšiuojami pagal jų vardus.
 
 [v0.3](https://github.com/Astrowski/My-first-project/tree/v.03) - trečia versija
+* Sukurtas studentų surūšiavimas pagal pažymius
 * Sukurtas išimčių valdymas ([Exception Handling](https://www.tutorialspoint.com/cplusplus/cpp_exceptions_handling.htm)).
