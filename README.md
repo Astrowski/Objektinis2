@@ -18,11 +18,11 @@ Paleidus programą yra prašoma įvesti duomenis:
 * Studentai yra automatiškai išrūšiuojami pagal jų vardus.
 
 [v0.3](https://github.com/Astrowski/My-first-project/tree/v.03) - trečia versija
-* Sukurtas studentų surūšiavimas pagal pažymius
-* Sukurtas studentų išvedimas į failus
-* Sukurta funkcija leidžianti sugeneruoti atsitiktinius studentų sarašų failus
+* Sukurtas studentų surūšiavimas pagal pažymius.
+* Sukurtas studentų išvedimas į failus.
+* Sukurta funkcija leidžianti sugeneruoti atsitiktinius studentų sarašų failus.
 * Sukurta laiko testavimo funkcija.
 
 [v0.4](https://github.com/Astrowski/My-first-project/tree/v.04) - ketvirta versija
-
+* Sukurtas studentų išrūšiavimo į 2 skirtingus konteinerius spartos analizės testavimas.
 * Sukurtas išimčių valdymas ([Exception Handling](https://www.tutorialspoint.com/cplusplus/cpp_exceptions_handling.htm)).
