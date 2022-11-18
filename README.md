@@ -25,7 +25,7 @@ Paleidus programą yra prašoma įvesti duomenis:
 [v0.4](https://github.com/Astrowski/My-first-project/tree/v.04) - ketvirta versija
 * Sukurta funkcija leidžianti atlikti programos veikimo greičio (spartos) analizę.
 * Sukurta funkcija leidžianti sugeneruoti atsitiktinius studentų sarašų failus (1'000, 10'000, 100'000, 1'000'000, 10'000'000 įrašų).
-* Sukurta konteinerių testavimo funkcija, kuri leidžia išmatuoti programos veikimo spartą priklausomai nuo naudojamo vieno iš dviejų konteinerių.
+* Sukurta laiko testavimo funkcija
 
 [v1.0](https://github.com/Astrowski/My-first-project/tree/v1.0) - penkta versija
 * Sukurta testavimo funkcija, leidžianti pasirinkti testavimo strategijos būdą.
