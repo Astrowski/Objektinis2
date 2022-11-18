@@ -27,6 +27,6 @@ Paleidus programą yra prašoma įvesti duomenis:
 * Sukurta funkcija leidžianti sugeneruoti atsitiktinius studentų sarašų failus (1'000, 10'000, 100'000, 1'000'000, 10'000'000 įrašų).
 * Sukurta konteinerių testavimo funkcija, kuri leidžia išmatuoti programos veikimo spartą priklausomai nuo naudojamo vieno iš dviejų konteinerių.
 
-[v1.0](https://github.com/Astrowski/My-first-project/tree/v.05) - penkta versija
+[v1.0](https://github.com/Astrowski/My-first-project/tree/v1.0) - penkta versija
 * Sukurta testavimo funkcija, leidžianti pasirinkti testavimo strategijos būdą.
 * Sukurta funkcija, leidžianti palyginti testavimo rezultatus tarp paprasto ir optimizuoto vektoriaus ir listo.
