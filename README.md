@@ -20,4 +20,5 @@ Paleidus programą yra prašoma įvesti duomenis:
 [v0.3](https://github.com/Astrowski/My-first-project/tree/v.03) - trečia versija
 * Sukurtas studentų surūšiavimas pagal pažymius
 * Sukurtas studentų išvedimas į failus
-* Sukurtas išimčių valdymas ([Exception Handling](https://www.tutorialspoint.com/cplusplus/cpp_exceptions_handling.htm)).
+* Sukurta funkcija leidžianti sugeneruoti atsitiktinius studentų sarašų failus
+* Sukurta laiko testavimo funkcija.
