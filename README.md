@@ -11,7 +11,7 @@ Paleidus programą yra prašoma įvesti duomenis:
 
 # Programos veikimo pavyzdžiai #
 
-# Programos pavyzdys testuojant jos spartą
+### Programos pavyzdys testuojant jos spartą ###
 ```
 Iveskite studentu skaiciu:
 10000
@@ -22,7 +22,7 @@ Failo isvedimas su 10000 studentais  i vargsiukus uztruko : 0.0780005 s
 Failo isvedimas su 10000 studentais  i protingus uztruko : 0.111283 s
 ```
 
-# Programos veikimas įvedant duomenis iš failo
+### Programos veikimas įvedant duomenis iš failo ###
 
 ```
 Vardas              Pavarde             Galutinis(vid.)/  Galutinis(med.)
