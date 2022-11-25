@@ -19,7 +19,7 @@ int main() {
 			std::cout << "Ar norite skaityti duomenis is failo ar duomenis ivesti rankiniu budu? (y - file / n - manually): ";
 			if (tikrink())
 			{
-				ivesk(studentas, "kursiokai.txt", rc, false);
+				ivesk(studentas, "Studentai.txt", rc, false);
 			}
 			else
 			{
