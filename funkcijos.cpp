@@ -22,12 +22,12 @@ bool tikrink() 							// Y/N tikrinimas
 	}
 }
 
-char pasirink(char& rc) 				//rt-resultType naudojamas vidurkio isvedimui pasirinkti 1/2/3
+char pasirink(char& rc) 				
 {
 	while (true)
 	{
 		std::cin >> rc;
-		if (rc == '1' || rc == '2' || rc == '3')
+		if (rc == '1' || rc == '2' )
 		{
 			return rc;
 		}
@@ -70,22 +70,13 @@ int tikrinkSk() 							//Skaiciu inputo tikrinimas
 	}
 }
 
-void paz(int& grade)			// pazymio tikrinimas
-{
-	while (true)
-	{
-		if (grade <= 10 and grade > 0)
-		{
-			break;
-		}
-		else
-		{
-			std::cout << "Blogai ivedete, badykite dar kart.";
-			grade = tikrinkSk();
-		}
+void checkGrade(int& grade) {			// grade checkup
+	while (true) {
+		if (grade <= 10 && grade > 0) break;
+		else std::cout << "Blogai ivedete, badykite dar kart.";
+		grade = tikrinkSk();
 	}
 }
-
 void studentai(std::vector <Studentas>& studentas) {			//Studento duomenu ivedimas (manualinis)
 	bool pazym, sk;
 	int z;
@@ -121,11 +112,11 @@ void studentai(std::vector <Studentas>& studentas) {			//Studento duomenu ivedim
 			for (int i = 0; i < stud.n; i++)
 			{
 				stud.pazymiai[i] = tikrinkSk();
-				paz(stud.pazymiai[i]);
+				checkGrade(stud.pazymiai[i]);
 			}
 			std::cout << std::endl << "Iveskite egzamino pazymi: ";
 			stud.egzas = tikrinkSk();
-			paz(stud.egzas);
+			checkGrade(stud.egzas);
 		}
 	}
 
@@ -155,12 +146,12 @@ void studentai(std::vector <Studentas>& studentas) {			//Studento duomenu ivedim
 			for (int i = 0; i < stud.n; i++)
 			{
 				stud.pazymiai[i] = tikrinkSk();
-				paz(stud.pazymiai[i]);
+				checkGrade(stud.pazymiai[i]);
 			}
 
 			std::cout << std::endl << "Iveskite egzamino pazymi: ";
 			stud.egzas = tikrinkSk();
-			paz(stud.egzas);
+			checkGrade(stud.egzas);
 		}
 	}
 	studentas.push_back(stud);
@@ -217,6 +208,7 @@ void ivesk(T& studentas, std::string fileName, char rc, bool timeOut) 			// ives
 	}
 	file.close();
 }
+
 
 
 void isvesk(std::vector <Studentas> studentas, char rc) 						// isvestis i konsole		
@@ -328,18 +320,16 @@ void isvedimas(T protingi, T vargsai, char rc, std::string failas) {
 	{
 		vout << "-------------------------------------------------------------------" << std::endl;
 	}
-	while (vargsai.size() > 0)
+	for (auto& a : vargsai)
 	{
-		vout << std::left << std::setw(20) << vargsai.front().vardas << std::setw(20) << vargsai.front().pavarde << std::setw(18);
-		vout << std::fixed << std::setprecision(2) << round(vargsai.front().final) << std::endl;
-		vargsai.erase(vargsai.begin());
+		vout << std::left << std::setw(20) << a.vardas << std::setw(20) << a.pavarde << std::setw(18);
+		vout << std::fixed << std::setprecision(2) << a.final << std::endl;
 	}
 	vout.close();
-	while (protingi.size() > 0)
+	for (auto& a : protingi)
 	{
-		pout << std::left << std::setw(20) << protingi.front().vardas << std::setw(20) << protingi.front().pavarde << std::setw(18);
-		pout << std::fixed << std::setprecision(2) << round(protingi.front().final) << std::endl;
-		protingi.erase(protingi.begin());
+		pout << std::left << std::setw(20) << a.vardas << std::setw(20) << a.pavarde << std::setw(18);
+		pout << std::fixed << std::setprecision(2) << a.final << std::endl;
 	}
 	pout.close();
 }
@@ -392,7 +382,7 @@ bool rusiavimas(Studentas a, Studentas b) {				// rusiavimas
 		return false;
 	}
 }
-void generavimas(int m, std::string fileName) {					// failo kurimas
+void generuok(int m, std::string fileName) {					// failo kurimas
 	int a = 10;
 	std::ofstream out(fileName);
 	out << std::left << std::setw(20) << "Vardas" << std::setw(20) << "Pavarde";
@@ -446,7 +436,7 @@ void grupuok1(T studentas, T& protingi, T& vargsai, int num)
 	std::copy_if(studentas.begin(), studentas.end(), std::back_inserter(protingi), [](Studentas const& stud) {return stud.final >= 5; });
 	std::copy_if(studentas.begin(), studentas.end(), std::back_inserter(vargsai), [](Studentas const& stud) {return stud.final < 5; });
 	std::cout << "Studentu rusiavimas i dvi grupes uztruko: " 
-		<< std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::high_resolution_clock::now() - t1).count() / 1000. << "sekundziu" << std::endl;
+		<< std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::high_resolution_clock::now() - t1).count() / 1000. << " s." << std::endl;
 }
 
 template <class T>
@@ -456,11 +446,11 @@ void grupuok2(T& studentas, T& vargsai, int num)
 	auto it = stable_partition(studentas.begin(), studentas.end(), [](Studentas const& stud) {return stud.final >= 5; });
 	vargsai.assign(it, studentas.end());
 	studentas.erase(it, studentas.end());
-	std::cout << "Studentu rusiavimas i dvi grupes uztruko: " << std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::high_resolution_clock::now() - t1).count() / 1000. << "sekundes" << std::endl;
+	std::cout << "Studentu rusiavimas i dvi grupes uztruko: " << std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::high_resolution_clock::now() - t1).count() / 1000. << " s." << std::endl;
 }
 
 template <class T>
-void mainFunc(T studentas, T protingi, T vargsai, bool generuok, char rc, char grupavimas)
+void mainFunc(T studentas, T protingi, T vargsai, bool generavimas, char rc, char grupavimas)
 {
 	int a = 5;
 	int size[5] = { 1000, 10000, 100000, 1000000, 10000000 };
@@ -468,14 +458,13 @@ void mainFunc(T studentas, T protingi, T vargsai, bool generuok, char rc, char g
 	{
 		for (int i = 0; i < a; i++)
 		{
-			std::string studentai = "studentai" + std::to_string(size[i]) + ".txt";
+			std::string studentai = "Studentai_" + std::to_string(size[i]) + ".txt";
 			high_resolution_clock::time_point t1 = high_resolution_clock::now();
 			std::cout << std::endl << "Failas " << studentai << std::endl;
-			if (generuok == 1)
+			if (generavimas == 1)
 			{
-				generavimas(size[i], studentai);
+				generuok(size[i], studentai);
 				ivesk(studentas, studentai, rc, true);
-				sort(studentas.begin(), studentas.end(), rusiavimas);
 				grupuok1(studentas, protingi, vargsai, size[i]);
 				spausdink(protingi, rc, "Protingi_" + studentai);
 				spausdink(vargsai, rc, "Vargsai_" + studentai);
@@ -489,14 +478,13 @@ void mainFunc(T studentas, T protingi, T vargsai, bool generuok, char rc, char g
 	{
 		for (int i = 0; i < a; i++)
 		{
-			std::string studentai = "studentai" + std::to_string(size[i]) + ".txt";
+			std::string studentai = "Studentai_" + std::to_string(size[i]) + ".txt";
 			high_resolution_clock::time_point t1 = high_resolution_clock::now();
 			std::cout << std::endl << "Failas " << studentai << std::endl;
-			if (generuok == 1)
+			if (generavimas == 1)
 			{
-				generavimas(size[i], studentai);
+				generuok(size[i], studentai);
 				ivesk(studentas, studentai, rc, true);
-				sort(studentas.begin(), studentas.end(), rusiavimas);
 				grupuok2(studentas, vargsai, size[i]);
 				spausdink(protingi, rc, "Protingi_" + studentai);
 				spausdink(vargsai, rc, "Vargsai_" + studentai);
@@ -509,7 +497,7 @@ void mainFunc(T studentas, T protingi, T vargsai, bool generuok, char rc, char g
 }
 
 template <class T>
-void mainFuncList(T studentas, T protingi, T vargsai, bool generuok, char rc, char grupavimas)
+void mainFuncList(T studentas, T protingi, T vargsai, bool generavimas, char rc, char grupavimas)
 {
 	int a = 5;
 	int size[5] = { 1000, 10000, 100000, 1000000, 10000000 };
@@ -517,19 +505,18 @@ void mainFuncList(T studentas, T protingi, T vargsai, bool generuok, char rc, ch
 	{
 		for (int i = 0; i < a; i++)
 		{
-			std::string studentai = "studentai" + std::to_string(size[i]) + ".txt";
+			std::string studentai = "Studentai_" + std::to_string(size[i]) + ".txt";
 			high_resolution_clock::time_point t1 = high_resolution_clock::now();
 			std::cout << std::endl << "Failas " << studentai << std::endl;
-			if (generuok == 1)
+			if (generavimas == 1)
 			{
-				generavimas(size[i], studentai);
+				generuok(size[i], studentai);
 				ivesk(studentas, studentai, rc, true);
-				studentas.sort(rusiavimas);
 				grupuok1(studentas, protingi, vargsai, size[i]);
 				spausdink(protingi, rc, "Protingi_" + studentai);
 				spausdink(vargsai, rc, "Vargsai_" + studentai);
 				std::cout << "Bendras failo " << studentai << " testavimo laikas: " <<
-					std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::high_resolution_clock::now() - t1).count() / 1000. << "sekundes" << std::endl;
+					std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::high_resolution_clock::now() - t1).count() / 1000. << " s." << std::endl;
 			}
 
 		}
@@ -538,19 +525,18 @@ void mainFuncList(T studentas, T protingi, T vargsai, bool generuok, char rc, ch
 	{
 		for (int i = 0; i < a; i++)
 		{
-			std::string studentai = "studentai" + std::to_string(size[i]) + ".txt";
+			std::string studentai = "Studentai_" + std::to_string(size[i]) + ".txt";
 			high_resolution_clock::time_point t1 = high_resolution_clock::now();
 			std::cout << std::endl << "Failas " << studentai << std::endl;
-			if (generuok == 1)
+			if (generavimas == 1)
 			{
-				generavimas(size[i], studentai);
+				generuok(size[i], studentai);
 				ivesk(studentas, studentai, rc, true);
-				studentas.sort(rusiavimas);
 				grupuok2(studentas, vargsai, size[i]);
 				spausdink(protingi, rc, "Protingi_" + studentai);
 				spausdink(vargsai, rc, "Vargsai_" + studentai);
 				std::cout << "Bendras failo " << studentai << " testavimo laikas: " <<
-					std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::high_resolution_clock::now() - t1).count() / 1000. << "sekundes" << std::endl;
+					std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::high_resolution_clock::now() - t1).count() / 1000. << " s." << std::endl;
 			}
 
 		}
@@ -587,7 +573,7 @@ void tyrimas()
 	char grupavimas;
 	std::cout << std::endl << "Pasirinkite testavimo strategija (1 / 2): " << std::endl
 		<< "(1 - studentu skaidymas i du konteinerius)" << std::endl
-		<< "(2 - studentu skaidymas panaudojant tik viena konteineri" << std::endl;
+		<< "(2 - studentu skaidymas panaudojant tik viena konteineri)" << std::endl;
 	pasirink(grupavimas);
 	std::cout << std::endl << "Ar norite sugeneruoti studentu failus? (Y/N): ";
 	if (tikrink())
