@@ -643,6 +643,9 @@ void tyrimas()
 		std::cout << "VYKDOMAS VECTOR VEIKIMO SPARTOS PALYGINIMAS. " << std::endl
 			<< "(Palyginimui naudojama antroji strategija) " << std::endl;
 
+		std::cout << std::endl << "--------------------------- Pradedamas testavimas naudojant vector: -----------------------------------------------" << std::endl;
+		tirkVec(generuok, rc, '2');
+		
 		std::cout << std::endl << "--------------------------- Pradedamas testavimas naudojant optimizuota vector: -----------------------------------" << std::endl;
 		tirkVec(generuok, rc, '3');
 	}
