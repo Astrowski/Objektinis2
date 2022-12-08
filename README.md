@@ -200,3 +200,4 @@ Bendras failo Studentai_1000000.txt testavimo laikas: 36.799sekundes
   * Atlikta eksperimentinė analizė tarp skirtingų optimizavimo lygių, nurodomų flag'ais (`-O1`, `-O2`, `-O3`).
 
 [v1.2](https://github.com/Astrowski/Objektinis2/tree/v1.2) - septinta versija
+  * Realizuota rule of three
