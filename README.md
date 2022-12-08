@@ -13,7 +13,7 @@ Paleidus programą yra prašoma įvesti duomenis:
 ```
 Ar norite atlikti programos veikimo (greicio) analize? (Y/N): y
 
-Pasirinkite testavimo strategija (1 / 2):
+Pasirinkite testavimo strategija (1 / 2 / 3):
 (1 - studentu skaidymas i du konteinerius)
 (2 - studentu skaidymas panaudojant tik viena konteineri)
 (3 - vector ir optimizuoto vector palyginimas)
@@ -21,51 +21,51 @@ Pasirinkite testavimo strategija (1 / 2):
 
 Ar norite sugeneruoti studentu failus? (Y/N): y
 
-Ar norite apskaiciuoti mediana(1), ar vidurki(2)? 2
+Ar norite apskaiciuoti mediana(1), ar vidurki(2)? 1
 Naudojama 1 strategija
 
 --------------------------- Pradedamas testavimas naudojant vector: -----------------------------------------------
 
 Failas Studentai_1000.txt
 Studentu rusiavimas i dvi grupes uztruko: 0 s.
-Bendras failo Studentai_1000.txt testavimo laikas: 0.066sekundes
+Bendras failo Studentai_1000.txt testavimo laikas: 0.059sekundes
 
 Failas Studentai_10000.txt
-Studentu rusiavimas i dvi grupes uztruko: 0.003 s.
-Bendras failo Studentai_10000.txt testavimo laikas: 0.33sekundes
+Studentu rusiavimas i dvi grupes uztruko: 0.01 s.
+Bendras failo Studentai_10000.txt testavimo laikas: 0.417sekundes
 
 Failas Studentai_100000.txt
-Studentu rusiavimas i dvi grupes uztruko: 0.041 s.
-Bendras failo Studentai_100000.txt testavimo laikas: 4.524sekundes
+Studentu rusiavimas i dvi grupes uztruko: 0.054 s.
+Bendras failo Studentai_100000.txt testavimo laikas: 3.44sekundes
 
 Failas Studentai_1000000.txt
-Studentu rusiavimas i dvi grupes uztruko: 0.483 s.
-Bendras failo Studentai_1000000.txt testavimo laikas: 38.9sekundes
+Studentu rusiavimas i dvi grupes uztruko: 0.781 s.
+Bendras failo Studentai_1000000.txt testavimo laikas: 35.107sekundes
 
 ----------------------------- Pradedamas testavimas naudojant list: ---------------------------------------------
 
 Failas Studentai_1000.txt
 Studentu rusiavimas i dvi grupes uztruko: 0 s.
-Bendras failo Studentai_1000.txt testavimo laikas: 0.083 s.
+Bendras failo Studentai_1000.txt testavimo laikas: 0.055 s.
 
 Failas Studentai_10000.txt
 Studentu rusiavimas i dvi grupes uztruko: 0.002 s.
-Bendras failo Studentai_10000.txt testavimo laikas: 0.418 s.
+Bendras failo Studentai_10000.txt testavimo laikas: 0.367 s.
 
 Failas Studentai_100000.txt
-Studentu rusiavimas i dvi grupes uztruko: 0.03 s.
-Bendras failo Studentai_100000.txt testavimo laikas: 3.778 s.
+Studentu rusiavimas i dvi grupes uztruko: 0.034 s.
+Bendras failo Studentai_100000.txt testavimo laikas: 3.385 s.
 
 Failas Studentai_1000000.txt
-Studentu rusiavimas i dvi grupes uztruko: 0.376 s.
-Bendras failo Studentai_1000000.txt testavimo laikas: 38.933 s.
+Studentu rusiavimas i dvi grupes uztruko: 0.397 s.
+Bendras failo Studentai_1000000.txt testavimo laikas: 34.33 s.
 ```
 
 ### 2 STRATEGIJA ###
 ```
 Ar norite atlikti programos veikimo (greicio) analize? (Y/N): y
 
-Pasirinkite testavimo strategija (1 / 2):
+Pasirinkite testavimo strategija (1 / 2 / 3):
 (1 - studentu skaidymas i du konteinerius)
 (2 - studentu skaidymas panaudojant tik viena konteineri)
 (3 - vector ir optimizuoto vector palyginimas)
@@ -73,51 +73,51 @@ Pasirinkite testavimo strategija (1 / 2):
 
 Ar norite sugeneruoti studentu failus? (Y/N): y
 
-Ar norite apskaiciuoti mediana(1), ar vidurki(2)? 1
+Ar norite apskaiciuoti mediana(1), ar vidurki(2)? 2
 Naudojama 2 strategija
 
 --------------------------- Pradedamas testavimas naudojant vector: -----------------------------------------------
 
 Failas Studentai_1000.txt
 Studentu rusiavimas i dvi grupes uztruko: 0 s.
-Bendras failo Studentai_1000.txt testavimo laikas: 0.036sekundes
+Bendras failo Studentai_1000.txt testavimo laikas: 0.038sekundes
 
 Failas Studentai_10000.txt
-Studentu rusiavimas i dvi grupes uztruko: 0 s.
-Bendras failo Studentai_10000.txt testavimo laikas: 0.31sekundes
+Studentu rusiavimas i dvi grupes uztruko: 0.001 s.
+Bendras failo Studentai_10000.txt testavimo laikas: 0.259sekundes
 
 Failas Studentai_100000.txt
-Studentu rusiavimas i dvi grupes uztruko: 0.015 s.
-Bendras failo Studentai_100000.txt testavimo laikas: 3.046sekundes
+Studentu rusiavimas i dvi grupes uztruko: 0.017 s.
+Bendras failo Studentai_100000.txt testavimo laikas: 2.674sekundes
 
 Failas Studentai_1000000.txt
-Studentu rusiavimas i dvi grupes uztruko: 0.173 s.
-Bendras failo Studentai_1000000.txt testavimo laikas: 30.996sekundes
+Studentu rusiavimas i dvi grupes uztruko: 0.261 s.
+Bendras failo Studentai_1000000.txt testavimo laikas: 27.433sekundes
 
 ----------------------------- Pradedamas testavimas naudojant list: ---------------------------------------------
 
 Failas Studentai_1000.txt
 Studentu rusiavimas i dvi grupes uztruko: 0 s.
-Bendras failo Studentai_1000.txt testavimo laikas: 0.056 s.
+Bendras failo Studentai_1000.txt testavimo laikas: 0.039 s.
 
 Failas Studentai_10000.txt
-Studentu rusiavimas i dvi grupes uztruko: 0.001 s.
-Bendras failo Studentai_10000.txt testavimo laikas: 0.264 s.
+Studentu rusiavimas i dvi grupes uztruko: 0.002 s.
+Bendras failo Studentai_10000.txt testavimo laikas: 0.274 s.
 
 Failas Studentai_100000.txt
-Studentu rusiavimas i dvi grupes uztruko: 0.029 s.
-Bendras failo Studentai_100000.txt testavimo laikas: 3.132 s.
+Studentu rusiavimas i dvi grupes uztruko: 0.027 s.
+Bendras failo Studentai_100000.txt testavimo laikas: 2.693 s.
 
 Failas Studentai_1000000.txt
-Studentu rusiavimas i dvi grupes uztruko: 0.234 s.
-Bendras failo Studentai_1000000.txt testavimo laikas: 29.558 s.
+Studentu rusiavimas i dvi grupes uztruko: 0.377 s.
+Bendras failo Studentai_1000000.txt testavimo laikas: 27.102 s.
 ```
 
 ### 3 STRATEGIJA ###
 ```
 Ar norite atlikti programos veikimo (greicio) analize? (Y/N): y
 
-Pasirinkite testavimo strategija (1 / 2):
+Pasirinkite testavimo strategija (1 / 2 / 3):
 (1 - studentu skaidymas i du konteinerius)
 (2 - studentu skaidymas panaudojant tik viena konteineri)
 (3 - vector ir optimizuoto vector palyginimas)
@@ -125,7 +125,7 @@ Pasirinkite testavimo strategija (1 / 2):
 
 Ar norite sugeneruoti studentu failus? (Y/N): y
 
-Ar norite apskaiciuoti mediana(1), ar vidurki(2)? 1
+Ar norite apskaiciuoti mediana(1), ar vidurki(2)? 2
 VYKDOMAS VECTOR VEIKIMO SPARTOS PALYGINIMAS.
 (Palyginimui naudojama antroji strategija)
 
@@ -133,37 +133,37 @@ VYKDOMAS VECTOR VEIKIMO SPARTOS PALYGINIMAS.
 
 Failas Studentai_1000.txt
 Studentu rusiavimas i dvi grupes uztruko: 0 s.
-Bendras failo Studentai_1000.txt testavimo laikas: 0.054sekundes
+Bendras failo Studentai_1000.txt testavimo laikas: 0.051sekundes
 
 Failas Studentai_10000.txt
-Studentu rusiavimas i dvi grupes uztruko: 0 s.
-Bendras failo Studentai_10000.txt testavimo laikas: 0.336sekundes
+Studentu rusiavimas i dvi grupes uztruko: 0.001 s.
+Bendras failo Studentai_10000.txt testavimo laikas: 0.271sekundes
 
 Failas Studentai_100000.txt
-Studentu rusiavimas i dvi grupes uztruko: 0.008 s.
-Bendras failo Studentai_100000.txt testavimo laikas: 2.806sekundes
+Studentu rusiavimas i dvi grupes uztruko: 0.017 s.
+Bendras failo Studentai_100000.txt testavimo laikas: 2.645sekundes
 
 Failas Studentai_1000000.txt
-Studentu rusiavimas i dvi grupes uztruko: 0.18 s.
-Bendras failo Studentai_1000000.txt testavimo laikas: 29.737sekundes
+Studentu rusiavimas i dvi grupes uztruko: 0.294 s.
+Bendras failo Studentai_1000000.txt testavimo laikas: 29.103sekundes
 
 --------------------------- Pradedamas testavimas naudojant optimizuota vector: -----------------------------------
 
 Failas Studentai_1000.txt
 Studentu rusiavimas i dvi grupes uztruko: 0 s.
-Bendras failo Studentai_1000.txt testavimo laikas: 0.04sekundes
+Bendras failo Studentai_1000.txt testavimo laikas: 0.074sekundes
 
 Failas Studentai_10000.txt
-Studentu rusiavimas i dvi grupes uztruko: 0.001 s.
-Bendras failo Studentai_10000.txt testavimo laikas: 0.318sekundes
+Studentu rusiavimas i dvi grupes uztruko: 0.004 s.
+Bendras failo Studentai_10000.txt testavimo laikas: 0.344sekundes
 
 Failas Studentai_100000.txt
-Studentu rusiavimas i dvi grupes uztruko: 0.013 s.
-Bendras failo Studentai_100000.txt testavimo laikas: 3.964sekundes
+Studentu rusiavimas i dvi grupes uztruko: 0.034 s.
+Bendras failo Studentai_100000.txt testavimo laikas: 3.384sekundes
 
 Failas Studentai_1000000.txt
-Studentu rusiavimas i dvi grupes uztruko: 0.177 s.
-Bendras failo Studentai_1000000.txt testavimo laikas: 36.799sekundes
+Studentu rusiavimas i dvi grupes uztruko: 0.347 s.
+Bendras failo Studentai_1000000.txt testavimo laikas: 35.055sekundes
 ```
 
 # Programos įdiegimas ir naudojimasis #
