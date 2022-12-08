@@ -194,6 +194,6 @@ Bendras failo Studentai_1000000.txt testavimo laikas: 36.799sekundes
 * Sukurta testavimo funkcija, leidžianti pasirinkti testavimo strategijos būdą.
 * Sukurta funkcija, leidžianti palyginti testavimo rezultatus tarp paprasto ir optimizuoto vektoriaus ir listo.
 
-[v1.1]() -šešta versija
+[v1.1](https://github.com/Astrowski/Objektinis2/tree/v1.1) -šešta versija
   * Atliktas spartos palyginimas tarp `struct` ir `class`.
   * Atlikta eksperimentinė analizė tarp skirtingų optimizavimo lygių, nurodomų flag'ais (`-O1`, `-O2`, `-O3`).
