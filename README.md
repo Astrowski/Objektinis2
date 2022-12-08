@@ -196,4 +196,4 @@ Bendras failo Studentai_1000000.txt testavimo laikas: 36.799sekundes
 
 [v1.1](https://github.com/Astrowski/Objektinis2/tree/v1.1) - šešta versija
   * Studentas struktūra pakeista į klasę.
-  * Atliktas spartos palyginimas tarp 'struct' ir 'class'.
+  * Atliktas spartos palyginimas tarp `struct` ir `class`.
