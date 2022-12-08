@@ -199,7 +199,7 @@ Bendras failo Studentai_1000000.txt testavimo laikas: 32.402sekundes
   * Atliktas spartos palyginimas tarp `struct` ir `class`.
 
 [v1.2](https://github.com/Astrowski/Objektinis2/tree/v1.2) - septinta versija
-  * Realizuota rule of three
+  * Realizuota `rule of three`
 
 [v1.5](https://github.com/Astrowski/Objektinis2/tree/v1.5)
   * Pridėta abstrakti bazinė klasė `Person`.
